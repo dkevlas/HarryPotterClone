@@ -1,16 +1,17 @@
-import { positions } from './../../data/houses';
-import { AfterViewInit, Component } from '@angular/core';
-import { allHouse, House } from '../../data/houses';
+import { Component } from '@angular/core';
+import { House } from '../../data/interfaces';
+import { allHouse } from '../../data/houses';
+import { Router } from '@angular/router';
+import { IndexHouseService } from '../../services/index-house.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent implements AfterViewInit{
+export class HomeComponent{
 
-  ngAfterViewInit(): void {
-  }
+  constructor(private router: Router, private numberBridge: IndexHouseService){}
   houses: House[] = allHouse
 
   areas = ['a', 'b', 'c', 'd']
@@ -22,7 +23,7 @@ export class HomeComponent implements AfterViewInit{
   itemPrev: number = 0
   clickTop: number | null = 0
   guardarItem: string = ''
-  movePosition(index: number){
+  movePosition(index: number): void{
     if(this.clickTop === null){
       this.guardarItem = this.areas[this.itemPrev]
       this.areas[this.itemPrev] = this.areas[index]
@@ -35,5 +36,23 @@ export class HomeComponent implements AfterViewInit{
       this.itemPrev = index
       this.clickTop = null
     }
+    this.houseCurrent = index
+  }
+  houseCurrent: number = 0  //Se usará adicional para pasar el NUM a otro componente
+  stylesHouseSelected: number = 0
+  backgroundCurrent: string = `url('${this.houses[0].bgImage}')`
+  selectHouse(i: number): void{
+    this.backgroundCurrent = `url('${this.houses[i].bgImage}')`
+    this.stylesHouseSelected = i
+  }
+  //RUTA VARIABLE
+  routeHouse(title: string){
+    this.router.navigate(['/', title, 'nosotros'])
+  }
+  //NUMERO BRIDGE
+  catchNumber(index: number){
+    //index = this.houseCurrent
+    this.numberBridge.setNumber(index)
+    console.log(this.houseCurrent)
   }
 }

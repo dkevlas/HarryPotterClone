@@ -1,1 +1,13 @@
-<p>home works!</p>
+<main class="home">
+    <div class="container" [ngStyle]="{'background-image': backgroundCurrent}">
+        <div class="title"></div>
+        <div class="houses">
+            @for (item of houses; track $index) {
+                <div (click)="movePosition($index)" [ngClass]="['house'+($index + 1), 'logo']" [ngStyle]="gridArea($index)">
+                    <img (click)="selectHouse($index)" [ngClass]="{'selected-house': stylesHouseSelected=== $index}" [src]="houses[$index].logo" [alt]="houses[$index].alt">
+                </div>
+            }
+            <button (click)="catchNumber(houseCurrent)" (click)="routeHouse(houses[houseCurrent].redirectHouse)" class="button">Visitar {{houses[houseCurrent].name}}</button>
+        </div>
+    </div>
+</main>
