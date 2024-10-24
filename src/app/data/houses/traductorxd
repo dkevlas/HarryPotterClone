@@ -1,0 +1,42 @@
+abouts us:
+    - Sobre nosotros
+    {
+        h3: the most resourceful of them all
+                - el más ingenioso de todos
+
+        p: Welcome to Slytherin House. Take a look at lifes of the most promising and powerful Hogwarts students
+                '- Bienvenidos a la Casa Slytherin. Echa un vistazo a las vidas de los estudiantes más prometedores y poderosos de Hogwarts.'
+        
+        BUTTON: learn more
+                - aprender más
+    }
+
+
+
+
+our achievements
+    - nuestros logros
+    {
+        h3: what makes us who we are
+                - lo que nos hace quienes somos
+
+        h5: look through the stories of our brightest students
+                -Mira las historias de nuestros estudiantes más brillantes.
+
+        ---------------------------------------------------------------
+
+        h4: Phineas Nigellus Black
+        p: Lorem ipsum .........
+    }
+
+
+what it takes to become our student
+    - lo que se necesita para convertirse en nuestro estudiante
+
+    {
+        h2: welcome to slytherin common room
+                - bienvenido a la sala común de slytherin
+        
+        button: take a tour
+                - hacer un recorrido
+    }
