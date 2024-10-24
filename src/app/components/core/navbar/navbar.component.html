@@ -1,0 +1,17 @@
+<nav class="nav">
+    <span class="logo">
+        <img [src]="infoNav[indexService].logoNav" [alt]="infoNav[indexService].alt">
+    </span>
+    <div class="ul">
+        <li>
+            <a [routerLink]="pathAbout" class="link">SOBRE NOSOTROS</a>
+        </li>
+        <li>
+            <a [routerLink]="pathAchievements" class="link">NUESTROS LOGROS</a>
+        </li>
+        <li>
+            <a [routerLink]="pathBecomeStudents" class="link">WHAT IT TAKES TO BECOME OUR STUDENT</a>
+        </li>
+    </div>
+    <button class="button">Contátanos</button>
+</nav>

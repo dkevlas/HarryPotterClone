@@ -1,0 +1,77 @@
+@import '../../../../styles.scss';
+
+.nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0 0 0;
+    .logo{
+        width: clamp(2.813rem, 2.031rem + 3.125vw, 4.375rem);
+        aspect-ratio: 1/1;
+        position: relative;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li{
+            .link{
+                font-size: clamp(0.75rem, 0.675rem + 0.3vw, 0.9rem);
+                color: white;
+                font-family: "Shadows Into Light Two", sans-serif;
+                cursor: pointer;
+                text-wrap: pretty;
+            }
+        }
+    }
+    .button{
+        font-size: clamp(0.75rem, 0.625rem + 0.5vw, 1rem);
+        background-color: transparent;
+        outline: 2px solid white;
+        backdrop-filter: blur(5px);
+        color: white;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+}
+
+@include mediaQuerie(medium){
+    .nav{
+        flex-direction: row;
+        width: 90%;
+    }
+}
+@include mediaQuerie(large){
+    .nav{
+        width: 100%;
+        padding: 10px 20px 0;
+        .ul{
+            flex-direction: row;
+            width: max-content;
+            gap: clamp(1.5rem, -4.318rem + 9.091vw, 2.5rem);
+        }
+    }
+}
+@include mediaQuerie(xxlarge){
+    .nav{
+        max-width: 1440px;
+    }
+}
