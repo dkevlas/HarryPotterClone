@@ -4,4 +4,54 @@
     @media screen and (min-width: map-get($breakpoint, $bp)) {
         @content
     }
+};
+
+@mixin fontSizeH3(){
+    font-size: clamp(1.4rem, 0.944rem + 2.431vw, 2.5rem);
+    @include mediaQuerie(large){
+        font-size: clamp(2.4rem, -0.308rem + 4.231vw, 3.5rem);
+    }
 }
+
+@mixin descriptionH3-forP(){
+    font-size: clamp(0.813rem, 0.729rem + 0.444vw, 1.063rem);
+    width: 90%;
+    max-width: 400px;
+    text-wrap: pretty;
+    margin: 10px auto;
+    @include mediaQuerie(medium){
+        width: 80%;
+    }
+}
+@mixin paddingTopNav(){
+    padding-top: $padding-top-navbar-small;
+    @include mediaQuerie(medium){
+        padding-top: $padding-top-navbar-medium;
+    }
+    @include mediaQuerie(large){
+        padding-top: $padding-top-navbar-large;
+    }
+};
+
+@mixin componentTrio(){
+    @include paddingTopNav;
+    width: 100%;
+    height: 100vh;
+    min-width: 300px;
+    @content;
+}
+@mixin bgHouse(){
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        filter: brightness(.5);
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
