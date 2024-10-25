@@ -5,7 +5,6 @@
     left: 50%;
     transform: translateX(-50%);
     min-width: 300px;
-    border-bottom: 1px solid white;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -39,6 +38,9 @@
                 font-family: "Shadows Into Light Two", sans-serif;
                 cursor: pointer;
                 text-wrap: pretty;
+                &.linkActive{
+                    text-decoration: underline;
+                }
             }
         }
     }
