@@ -1,0 +1,83 @@
+@import '../../../../styles.scss';
+
+.about{
+    .bgHouse{
+        @include bgHouse;
+    }
+}
+.container{
+    @include componentTrio;
+    .content{
+        padding: 0 10px;
+        text-align: center;
+        color: white;
+        h3{
+            text-wrap: pretty;
+            @include fontSizeH3;
+        }
+        p{
+            @include descriptionH3-forP;
+        }
+        button{
+            padding: .4em .8em;
+            font-size: clamp(0.8rem, 0.733rem + 0.356vw, 1rem);
+            background-color: transparent;
+            color: white;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 5px white;
+            &:hover{
+                outline: 1px solid white;
+            }
+            &:active{
+                transform: scale(.95);
+            }
+        }
+    }
+    .imgAnimal{
+        min-height: 350px;
+        position: relative;
+        align-content: end;
+        h2{
+            color: white;
+            text-align: center;
+            font-size: clamp(1.7rem, 1.244rem + 2.431vw, 2.8rem);
+        }
+        img{
+            
+            height: 90%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+}
+
+@include mediaQuerie(medium){
+    .container{
+        .content{
+            max-width: 550px;
+            margin: auto;
+        }
+    }
+}
+@include mediaQuerie(large){
+    .container{
+        display: flex;
+        justify-content: center;
+        .content{
+            align-content: center;
+            max-height: 400px;
+            margin: 0;
+        }
+        .imgAnimal{
+            max-height: 450px;
+            h2{
+                font-size: clamp(3rem, -1.923rem + 7.692vw, 5rem);
+            }
+        }
+    }
+}
