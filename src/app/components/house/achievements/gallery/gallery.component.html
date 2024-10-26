@@ -1,0 +1,10 @@
+<div class="gallery">
+    <div class="container">
+        <div class="images">
+            @for (img of allPhotos; track $index) {
+                <img [src]="img" alt="">
+            }
+        </div>
+        <button (click)="sendClose()">CERRAR</button>
+    </div>
+</div>
