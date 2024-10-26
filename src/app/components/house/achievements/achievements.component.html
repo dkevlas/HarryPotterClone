@@ -1,0 +1,31 @@
+<div class="achievements">
+    <div class="bgHouse">
+        <img [src]="infoAchievements[indexService].bgHouse" alt="">
+    </div>
+    <div class="container">
+        <div class="content">
+            <h3>Lo que nos hace quienes somos</h3>
+            <p>{{infoAchievements[indexService].storieField}}</p>
+        </div>
+        <div class="slider">
+            <div class="allPjs">
+                <!-- (item of infoAchievements[indexService].characters; track $index) -->
+                @for (item of infoControlled; track $index) {
+                    <div class="items">
+                        <div class="text">
+                            <h4>{{item.name}}</h4>
+                            <p>{{item.description}}</p>
+                        </div>
+                        <button (click)="showMore($index)">Ver fotos</button>
+                    </div>
+                }
+            </div>
+            <div class="gallery">
+                @if (photosOk) {
+                    <app-gallery (closePhotos)="getClose($event)" [allPhotos]="infoAchievements[indexService].characters[showPhotos].photos"></app-gallery>
+                }
+            </div>
+        </div>
+        <button class="show-more" [ngStyle]="{'visibility': visibility}" (click)="showCharacter()">VER MAS</button>
+    </div>
+</div>
