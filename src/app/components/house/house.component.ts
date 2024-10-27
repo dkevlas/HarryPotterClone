@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { allHouse } from '../../data/houses';
 import { House } from '../../data/interfaces';
 @Component({
@@ -11,7 +11,7 @@ export class HouseComponent implements OnInit{
 
   houses: House[] = allHouse
   indexHouse: number = 0
-  constructor(private activatedRoute: ActivatedRoute){}
+  constructor(private activatedRoute: ActivatedRoute, private router: Router){}
 
   ngOnInit(): void {
     this.selectOne()
@@ -26,5 +26,9 @@ export class HouseComponent implements OnInit{
   houseOK(): boolean{
     const numbersHouses = [0, 1, 2, 3]
     return numbersHouses.includes(this.indexHouse) ? true : false
+  }
+
+  goHome(){
+    this.router.navigate(['/'])
   }
 }
