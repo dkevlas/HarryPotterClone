@@ -12,16 +12,34 @@ export interface infoHouseNav {
     alt?: string,
 }
 
+//SECTION ABOUT
 export interface houseAbout {
     titleDescription?: string,
     description?: string,
-    nameHouse?: string
+    nameHouse?: string,
+    imgAnimal?: string,
+    bgHouse?: string,
 }
 
+//SECTION ACHIEVEMENTS
+export interface Character {
+    name: string,
+    perfil: string,
+    description: string,
+    photos: string[],
+    descriptionFull: string
+}
 export interface houseAchievements {
     storieField?: string,
+    bgHouse?: string,
+    characters : Character[]
 }
 
+//SECTION BECOME STUDENT
 export interface houseBecomeStudent {
-    welcome?: string
+    welcome?: string,
+    title: string,
+    description: string,
+    list: string[],
+    cita: string,
 }
