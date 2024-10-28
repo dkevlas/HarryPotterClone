@@ -57,6 +57,7 @@ export class AchievementsComponent {
   showMore(i: number): void{
     this.showPhotos = i
     this.photosOk = true
+    document.body.style.overflow = 'hidden'
   }
 
   getClose(value: boolean){

@@ -7,7 +7,7 @@
             <h3>Lo que nos hace quienes somos</h3>
             <p>{{infoAchievements[indexService].storieField}}</p>
         </div>
-        <div class="slider">
+        <section>
             <div class="allPjs">
                 @for (item of infoControlled; track $index) {
                     <div class="items">
@@ -15,14 +15,14 @@
                             <h4>{{item.name}}</h4>
                             <p>{{item.description}}</p>
                         </div>
-                        <button (click)="showMore($index)">Ver fotos</button>
+                        <button (click)="showMore($index)">Leer más</button>
                     </div>
                 }
             </div>
-        </div>
+        </section>
         <button class="show-more" [ngStyle]="{'visibility': visibility}" (click)="showCharacter()">VER MAS</button>
         @if (photosOk) {
-            <app-gallery (closePhotos)="getClose($event)" [allPhotos]="infoAchievements[indexService].characters[showPhotos].photos"></app-gallery>
+            <app-gallery (closePhotos)="getClose($event)" [allPhotos]="infoAchievements[indexService].characters[showPhotos]"></app-gallery>
         }
     </div>
 </div>
