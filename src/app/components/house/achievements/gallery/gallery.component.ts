@@ -1,15 +1,12 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss'
 })
-export class GalleryComponent implements OnInit{
+export class GalleryComponent {
 
-  ngOnInit(): void {
-      // console.log(this.allPhotos)
-  }
   @Input()
   allPhotos: any
 
@@ -20,6 +17,6 @@ export class GalleryComponent implements OnInit{
 
   sendClose(){
     this.closePhotos.emit(this.close)
+    document.body.style.overflow = 'auto'
   }
-  
 }

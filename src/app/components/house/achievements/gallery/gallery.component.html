@@ -1,9 +1,19 @@
 <div class="gallery">
     <div class="container">
-        <div class="images">
-            @for (img of allPhotos; track $index) {
-                <img [src]="img" alt="">
-            }
+        <div class="content">
+            <div class="item">
+                <div class="text">
+                    <h3>{{allPhotos.name}}</h3>
+                    <p>{{allPhotos.descriptionFull}}</p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="img-item">
+                    @for (img of allPhotos.photos; track $index) {
+                        <img [src]="img" alt="">
+                    }
+                </div>
+            </div>
         </div>
         <button (click)="sendClose()">CERRAR</button>
     </div>

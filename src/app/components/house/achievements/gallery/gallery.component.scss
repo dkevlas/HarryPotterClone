@@ -5,16 +5,99 @@
     top: 0;
     left: 0;
     width: 100%;
+    min-width: 300px;
     height: 100%;
-    background-color: #0005;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
+    background-color: #0009;
+    z-index: $z-popup;
+    .content{
+        width: 90%;
+        height: calc(100% - 300px);
+        min-height: 450px;
+        margin: 1.5em auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #dcdcdc;
+        box-shadow: 0 0 10px white;
+        .item{
+            position: relative;
+            min-height: 230px;
+            height: max-content;
+            .text{
+                left: 0;
+                padding: 5px;
+                height: 100%;
+                text-align: center;
+                h3{
+                    font-size: clamp(1.125rem, 0.625rem + 1.25vw, 1.563rem);
+                    color: red;
+                    font-size: 24px;
+                    width: max-content;
+                    margin: auto;
+                }
+                p{
+                    text-wrap: pretty;
+                    font-size: clamp(0.938rem, 0.723rem + 0.536vw, 1.125rem);
+                }
+            }
+        }
+        .images{
+            position: relative;
+            padding: .5em;
+            flex-grow: 2;
+            overflow-y: auto;
+            .img-item{
+                position: absolute;
+                top: 0;
+                left: 0;
+                columns: 1;
+                column-gap: .5em;
+                padding: .5em;
+                img{
+                    display: block;
+                    width: 100%;
+                    margin-bottom: .5em;
+                }
+            }
+        }
+    }
+    button{
+        padding: .5em 1em;
+        background-color: black;
+        color: white;
+        outline: 2px solid white;
+        &:hover{
+            outline: none;
+            background-color: #111;
+        }
+        &:active{
+            transform: scale(.95);
+        }
+    }
 }
-img{
-    width: 250px;
-    // aspect-ratio: 4/3;
-    object-fit: cover;
-    
+
+@include mediaQuerie(medium){
+    .container{
+        .content{
+            max-width: 1000px;
+            .item{
+                min-height: 250px;
+                max-height: 280px;
+                .text{
+                    padding: 1em;
+                }
+            }
+            .images{
+                .img-item{
+                    columns: 2;
+                }
+            }
+        }
+    }
+}
+@include mediaQuerie(large){
+    .container{
+        .content{
+            height: calc(100% - 150px);
+        }
+    }
 }
