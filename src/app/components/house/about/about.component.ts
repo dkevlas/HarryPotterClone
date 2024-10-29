@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { houseAbout } from '../../../data/interfaces';
 import { houseInfoAbout,  } from '../../../data/houses';
 import { IndexHouseService } from '../../../services/index-house.service';
-
+import { changeColor } from '../../../data/colors';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -16,6 +16,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.indexCatched()
+    changeColor(this.indexService)
   }
 
   indexCatched(){

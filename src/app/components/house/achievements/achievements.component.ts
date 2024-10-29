@@ -6,6 +6,7 @@ import { gryffCharacters } from '../../../data/houses/gryffindor/gryffCharacters
 import { slytherCharacter } from '../../../data/houses/slytherin/slytherCharactersPhotos';
 import { huffleCharacters } from '../../../data/houses/hufflepuff/huffleCharactersPhotos';
 import { ravenCharacters } from '../../../data/houses/ravenclaw/ravenCharactersPhotos';
+import { changeColor } from '../../../data/colors';
 
 @Component({
   selector: 'app-achievements',
@@ -20,12 +21,11 @@ export class AchievementsComponent {
 
   infoControlled: Character[] = []
   photosOf: Character[][] = [gryffCharacters, slytherCharacter, huffleCharacters, ravenCharacters]
-  
 
-  
   ngOnInit(): void {
     this.indexCatched()
     this.showCharacter()
+    changeColor(this.indexService)
   }
 
   showItem: number = 0
