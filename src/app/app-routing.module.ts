@@ -12,6 +12,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: ':house',
+    loadChildren: () => import('./components/house/house.module').then(module => module.HouseModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./error/error.module').then(module => module.ErrorModule)
   }
