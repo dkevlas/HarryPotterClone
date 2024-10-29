@@ -44,18 +44,19 @@
                 aspect-ratio: 1/1;
                 object-fit: cover;
                 border-radius: 50%;
-                transition: transform .25s ease-in-out, filter .25s;
                 filter: brightness(.8);
                 opacity: .9;
+                outline: 2px solid var(--neutral-color);
+                transition: transform .25s ease-in-out, filter .25s, outline .25s;
                 &:hover{
                     transform: scale(1.05);
-                    box-shadow: 0 0 10px white;
-                    outline: 2px solid white;
+                    box-shadow: 0 0 10px var(--neutral-color);
+                    outline: 2px solid var(--dark-color);
                     filter: brightness(1);
                 }
                 &.selected-house{
-                    outline: 5px solid white;
-                    box-shadow: 0 0 10px white, 0 0 20px white;
+                    outline: 5px solid var(--dark-color);
+                    box-shadow: 0 0 10px var(--neutral-color), 0 0 20px var(--neutral-color);
                     filter: brightness(1);
                     opacity: 1;
                     transform: scale(1);
@@ -71,14 +72,14 @@
             transform: translateX(-50%);
             min-width: 70px;
             background-color: transparent;
-            color: white;
-            outline: 2px solid white;
+            color: var(--neutral-color);
+            outline: 2px solid var(--dark-color);
             border-radius: 0 7px 0 7px;
             backdrop-filter: blur(10px);
             width: 100%;
             aspect-ratio: 3/1;
             grid-area: 4/ 5/ span 1/ span 2;
-            z-index: 5;
+            z-index: $z-element;
             transition: transform .25s;
             &:hover{
                 transform: translateX(-50%) scale(1.10);

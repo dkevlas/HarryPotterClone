@@ -16,8 +16,8 @@
         margin: 1.5em auto;
         display: flex;
         flex-direction: column;
-        background-color: #dcdcdc;
-        box-shadow: 0 0 10px white;
+        background-color: var(--dark-color);
+        box-shadow: 0 0 10px var(--neutral-color);
         .item{
             position: relative;
             min-height: 230px;
@@ -29,12 +29,13 @@
                 text-align: center;
                 h3{
                     font-size: clamp(1.125rem, 0.625rem + 1.25vw, 1.563rem);
-                    color: red;
+                    color: var(--primary-color);
                     font-size: 24px;
                     width: max-content;
                     margin: auto;
                 }
                 p{
+                    color: var(--primary-color);
                     text-wrap: pretty;
                     font-size: clamp(0.938rem, 0.723rem + 0.536vw, 1.125rem);
                 }
@@ -62,12 +63,12 @@
     }
     button{
         padding: .5em 1em;
-        background-color: black;
-        color: white;
-        outline: 2px solid white;
+        background-color: var(--primary-color);
+        color: var(--neutral-color);
+        outline: 2px solid var(--neutral-color);
         &:hover{
             outline: none;
-            background-color: #111;
+            background-color: var(--primary-color);
         }
         &:active{
             transform: scale(.95);

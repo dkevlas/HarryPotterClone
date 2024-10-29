@@ -10,23 +10,24 @@
     .content{
         padding: 0 10px;
         text-align: center;
-        color: white;
         h3{
-            text-wrap: pretty;
             @include fontSizeH3;
+            text-wrap: pretty;
+            color: var(--primary-color);
         }
         p{
+            color: var(--neutral-color);
             @include descriptionH3-forP;
         }
         button{
             padding: .4em .8em;
             font-size: clamp(0.8rem, 0.733rem + 0.356vw, 1rem);
             background-color: transparent;
-            color: white;
+            color: var(--secondary-color);
             backdrop-filter: blur(10px);
-            box-shadow: 0 0 5px white;
+            box-shadow: 0 0 5px var(--primary-color);
             &:hover{
-                outline: 1px solid white;
+                outline: 1px solid var(--primary-color);
             }
             &:active{
                 transform: scale(.95);
@@ -38,7 +39,7 @@
         position: relative;
         align-content: end;
         h2{
-            color: white;
+            color: var(--secondary-color);
             text-align: center;
             font-size: clamp(1.7rem, 1.244rem + 2.431vw, 2.8rem);
         }
@@ -51,7 +52,7 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            z-index: -1;
+            z-index: $z-back;
         }
     }
 }

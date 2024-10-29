@@ -1,0 +1,29 @@
+@import '../../../../styles.scss';
+
+.container{
+    @include componentTrio;
+    background-color: green;
+    .content{
+        background-color: var(--primary-color);
+        width: 95%;
+        margin: 1.5em auto;
+        h2{
+            color: red;
+        }
+        button{
+            padding: .5em 1em;
+            background-color: transparent;
+            border-radius: 5px;
+            outline: 2px solid white;
+            color: white;
+            font-weight: bold;
+            backdrop-filter: blur(10px);
+            &:hover{
+                box-shadow: inset 0 0 5px white, 0 0 5px black;
+            }
+            &:active{
+                transform: scale(.95);
+            }
+        }
+    }
+}
