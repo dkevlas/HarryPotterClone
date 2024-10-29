@@ -4,9 +4,81 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    // opacity: .5;
     z-index: $z-modal;
-    color: white;
-    background-color: red;
-    
+    background-color: #0008;
+    text-align: center;
+    .container{
+        width: 95%;
+        margin: 2em auto 0;
+        background-color: var(--dark-color);
+        box-shadow: 0 0 10px var(--neutral-color);
+        padding: .5em;
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            h3{
+                color: var(--primary-color);
+                font-size: clamp(1.563rem, 1.066rem + 2.647vw, 2.125rem);
+            }
+            .description{
+                color: var(--neutral-color);
+                font-size: clamp(1rem, 0.669rem + 1.765vw, 1.375rem);
+            }
+            ul{
+                width: 90%;
+                margin: 1em auto;
+                max-width: 400px;
+                li{
+                    list-style: outside;
+                    color: var(--primary-color);
+                    text-align: start;
+                    font-size: clamp(0.875rem, 0.71rem + 0.882vw, 1.063rem);
+                    margin-bottom: .5em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .cita{
+        color: var(--neutral-color);
+    }
+    .test{
+        color: var(--primary-color);
+        a{
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+    }
+    button{
+        padding: .5em 1em;
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        outline: 2px solid var(--primary-color);
+        margin: 2em 0;
+        transition: transform .25;
+        &:hover{
+            transform: scale(1.05);
+        }
+        &:active{
+            transform: scale(.95);
+        }
+    }
+}
+@include mediaQuerie(medium){
+    .requirements{
+        .container{
+            max-width: 750px;
+            .content{
+                h3{
+                    font-size: clamp(2.1rem, 0.7rem + 2.8vw, 2.8rem);
+                }
+                ul{
+                    li{
+                        font-size: clamp(1rem, 0.6rem + 0.8vw, 1.2rem);
+                    }
+                }
+            }
+        }
+    }
 }

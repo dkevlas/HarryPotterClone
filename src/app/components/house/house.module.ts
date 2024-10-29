@@ -9,6 +9,7 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { BecomeStudentComponent } from './become-student/become-student.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './achievements/gallery/gallery.component';
+import { RequirementsComponent } from './become-student/requirements/requirements.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { GalleryComponent } from './achievements/gallery/gallery.component';
     AchievementsComponent,
     BecomeStudentComponent,
     AboutComponent,
-    GalleryComponent
+    GalleryComponent,
+    RequirementsComponent
   ],
   imports: [
     CommonModule,

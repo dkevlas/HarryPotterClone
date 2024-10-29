@@ -1,0 +1,16 @@
+<div class="requirements">
+    <div class="container">
+        <div class="content">
+            <h3>{{infoRequirements.title}}</h3>
+            <p class="description">{{infoRequirements.description}}</p>
+            <ul>
+                @for (item of infoRequirements.list; track $index) {
+                    <li>{{item}}</li>
+                }
+            </ul>
+        </div>
+        <span class="cita">{{infoRequirements.cita}}</span>
+        <p class="test">Test de Identidad: ¿Te identificas con estas características? ¡Descúbrelo con nuestro breve <a href="#">test!</a></p>
+    </div>
+    <button (click)="close()">Cerrar</button>
+</div>
