@@ -9,14 +9,41 @@ $breakpoint: (
 
 //PADDING - TOP
 $padding-top-navbar-small: 200px;
-$padding-top-navbar-medium: 100px;
+$padding-top-navbar-medium: 115px;
 $padding-top-navbar-large: 90px;
 
 //Z-INDEX
-
 $z-back: -1;
 $z-normal: 1;
 $z-element: 10;
 $z-fixed: 100;
 $z-popup: 500;
 $z-modal: 1000;
+
+//COLORES
+//Gryffindor:
+$RojoCarmin: #A50000;
+$AmarilloOro: #FFC107;
+
+// Slytherin:
+$VerdeEsmeralda: #2A623D;
+$PlataBrillante: #C0C0C0;
+
+// Hufflepuff:
+$AmarilloLimon: #F6EB61;
+$NegroProfundo: #000000;
+
+// Ravenclaw:
+$AzulReal: #003DA5;
+$PlataBrillante: #C0C0C0;
+
+// Hogwarts
+$PaleGray: #F7F7F7;
+$DeepSea: #001F3F;
+
+:root{
+    --primary-color: #{$VerdeEsmeralda};
+    --secondary-color: #{$PlataBrillante};
+    --neutral-color: #{$PaleGray};
+    --dark-color: #{$DeepSea};
+};

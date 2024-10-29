@@ -43,8 +43,9 @@
 @mixin bgHouse(){
     width: 100%;
     height: 100%;
-    position: absolute;
-    z-index: -1;
+    position: fixed;
+    left: 0;
+    z-index: $z-back;
     img{
         width: 100%;
         height: 100%;
@@ -54,4 +55,3 @@
         object-position: center;
     }
 }
-
