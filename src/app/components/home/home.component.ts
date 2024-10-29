@@ -10,7 +10,6 @@ import { IndexHouseService } from '../../services/index-house.service';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent{
-
   constructor(private router: Router, private numberBridge: IndexHouseService){}
   houses: House[] = allHouse
 
@@ -51,8 +50,6 @@ export class HomeComponent{
   }
   //NUMERO BRIDGE
   catchNumber(index: number){
-    //index = this.houseCurrent
     this.numberBridge.setNumber(index)
-    console.log(this.houseCurrent)
   }
 }
