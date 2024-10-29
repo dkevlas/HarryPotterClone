@@ -2,28 +2,49 @@
 
 .container{
     @include componentTrio;
-    background-color: green;
     .content{
-        background-color: var(--primary-color);
         width: 95%;
         margin: 1.5em auto;
+        max-width: 550px;
+        text-align: center;
         h2{
-            color: red;
+            color: var(--primary-color);
+            font-size: clamp(2rem, 1.007rem + 5.294vw, 3.125rem);
+            text-wrap: pretty;
         }
         button{
             padding: .5em 1em;
             background-color: transparent;
             border-radius: 5px;
-            outline: 2px solid white;
-            color: white;
+            outline: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
             font-weight: bold;
             backdrop-filter: blur(10px);
+            margin-top: 2.5em;
             &:hover{
-                box-shadow: inset 0 0 5px white, 0 0 5px black;
+                box-shadow: inset 0 0 5px var(--secondary-color), 0 0 5px var(--dark-color);
             }
             &:active{
                 transform: scale(.95);
             }
+        }
+    }
+}
+@include mediaQuerie(medium){
+    .container{
+        .content{
+            max-width: 70%;
+            h2{
+                font-size: clamp(2.813rem, 0.67rem + 5.357vw, 4.688rem);
+            }
+        }
+    }
+}
+@include mediaQuerie(large){
+    .container{
+        .content{
+            width: 80%;
+            max-width: 1000px;
         }
     }
 }

@@ -1,0 +1,11 @@
+<div class="achievements">
+    <div class="container">
+        <div class="content">
+            <h2>{{infoBecomeStudent[indexService].welcome}}</h2>
+            <button (click)="openBecomeStudent()">Hacer un recorrido</button>
+        </div>
+        @if (showBecomeStudent) {
+            <app-requirements (closeModal)="getCloseRequirements($event)" [infoRequirements]="infoBecomeStudent[indexService]"></app-requirements>
+        }
+    </div>
+</div>
