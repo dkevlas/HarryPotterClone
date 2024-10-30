@@ -21,29 +21,12 @@ $z-popup: 500;
 $z-modal: 1000;
 
 //COLORES
-//Gryffindor:
-$RojoCarmin: #A50000;
-$AmarilloOro: #FFC107;
-
-// Slytherin:
-$VerdeEsmeralda: #2A623D;
-$PlataBrillante: #C0C0C0;
-
-// Hufflepuff:
-$AmarilloLimon: #F6EB61;
-$NegroProfundo: #000000;
-
-// Ravenclaw:
-$AzulReal: #003DA5;
-$PlataBrillante: #C0C0C0;
-
-// Hogwarts
 $PaleGray: #F7F7F7;
-$DeepSea: #001F3F;
+$DeepSea: #001F30;
 
 :root{
-    --primary-color: #{$VerdeEsmeralda};
-    --secondary-color: #{$PlataBrillante};
+    --primary-color: #A50000;
+    --secondary-color: #FFC107;
     --neutral-color: #{$PaleGray};
     --dark-color: #{$DeepSea};
 };
