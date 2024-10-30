@@ -3,7 +3,8 @@ export interface House {
     logo: string,
     name: string,
     bgImage: string,
-    alt: string
+    alt: string,
+    bgHouseSections: string
 }
 
 export interface infoHouseNav {
@@ -31,7 +32,6 @@ export interface Character {
 }
 export interface houseAchievements {
     storieField?: string,
-    bgHouse?: string,
     characters : Character[]
 }
 
