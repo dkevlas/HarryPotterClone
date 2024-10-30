@@ -2,6 +2,6 @@ import { infoHouseNav } from "../../interfaces";
 
 export const ravenclaw: infoHouseNav = {
     pathHouse: 'ravenclaw',
-    logoNav: 'https://i.pinimg.com/736x/d0/57/d0/d057d0f47b998653b6db4dffc574cb64.jpg',
+    logoNav: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/Navbar/Ravenclaw-logo.webp',
     alt: 'Emblema de la casa Ravenclaw',
 }
