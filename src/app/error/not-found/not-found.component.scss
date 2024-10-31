@@ -1,0 +1,52 @@
+@import '../../../styles.scss';
+.not-found{
+    min-width: 300px;
+}
+.container{
+    width: 90%;
+    max-width: 600px;
+    aspect-ratio: 4/3;
+    margin: clamp(3rem, 1rem + 5.333vw, 5rem) auto;
+    min-height: 300px;
+    text-align: center;
+    align-content: end;
+    position: relative;
+    .code{
+        position: absolute;
+        font-size: clamp(4.5rem, 3.667rem + 4.444vw, 7rem);
+        left: 0;
+        top: 0;
+        color: var(--neutral-color);
+        font-family: 'Playwrite GB S', sans-serif;
+        text-shadow: 0 0 5px var(--neutral-color);
+    }
+    .img{
+        position: absolute;
+        right: 0;
+        top: 20%;
+        z-index: -1;
+        width: 50%;
+        aspect-ratio: 4/3;
+        img{
+            width: 100%;
+            filter: brightness(.5) drop-shadow(0 0 5px var(--neutral-color));
+            
+        }
+    }
+}
+button{
+    padding: .3em 1em;
+    font-size: clamp(1.25rem, 0.804rem + 1.429vw, 1.875rem);
+    background-color: transparent;
+    color: var(--neutral-color);
+    outline: 3px solid var(--neutral-color);
+    box-shadow: 0 0 15px var(--neutral-color);
+    font-family: 'Playwrite GB S', sans-serif;
+    &:hover{
+        background-color: var(--neutral-color);
+        color: var(--dark-color);
+    }
+    &:active{
+        transform: scale(.95);
+    }
+}
