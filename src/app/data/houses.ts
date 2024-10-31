@@ -20,30 +20,34 @@ export const allHouse: House[] = [
     {
         redirectHouse: 'gryffindor',
         name: 'Gryffindor',
-        logo: 'https://www.rollingstone.com/wp-content/uploads/2024/06/lisa-new-solo-music.jpg?w=1581&h=1054&crop=1',
-        bgImage: 'https://es.rollingstone.com/wp-content/uploads/2024/08/LISA-min.jpg',
-        alt: 'Casa de Gryffindor'
+        logo: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/home/Gryffindor-Essence.webp',
+        bgImage: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/home/Gryffindor-Vibes-Valentia.webp',
+        alt: 'Casa de Gryffindor',
+        bgHouseSections: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/Sala-Comun-Gryffindor-Refugio-Valiente.webp'
     },
     {
         redirectHouse: 'slytherin',
         name: 'Slytherin',
-        logo: 'https://cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/RHP76QC6UJF5NN52BOPJBTS2WM.png',
-        bgImage: 'https://media.glamour.mx/photos/66bba0a49f7f2fc7495a54e6/4:3/w_2664,h_1998,c_limit/Ros%C3%A9-de-%20BLACKPINK-peinadojpg.jpg',
-        alt: 'Casa de Slytherin'
+        logo: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/home/Slytherin-Essence.webp',
+        bgImage: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/home/Slytherin-Vibes-Astucia.webp',
+        alt: 'Casa de Slytherin',
+        bgHouseSections: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/Sala-Comun-Slytherin-El-Nido-de-Serpientes.webp',
     },
     {
         redirectHouse: 'hufflepuff',
         name: 'Hufflepuff',
-        logo: 'https://www.hollywoodreporter.com/wp-content/uploads/2023/05/Jennie-Kim-2023-Met-Gala-getty-1486924742-H-2023.jpg?w=1296&h=730&crop=1',
-        bgImage: 'https://hips.hearstapps.com/hmg-prod/images/jennie-ruby-jane-attends-the-idol-photocall-at-the-76th-news-photo-1684928482.jpg',
-        alt: 'Casa de Hufflepuff'
+        logo: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/home/Hufflepuff-Essence.webp',
+        bgImage: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/home/Hufflepuff-Vibes-Lealtad.webp',
+        alt: 'Casa de Hufflepuff',
+        bgHouseSections: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/Sala-Comun-Hufflepuff-El-Hogar-de-los-Leales.jpg'
     },
     {
         redirectHouse: 'ravenclaw',
         name: 'Ravenclaw',
-        logo: 'https://www.gala.fr/imgre/fit/~1~gal~2021~10~08~3e991429-fc9a-4e1b-9d1a-099cc0c98eb2.jpeg/3219x2335/quality/80/jisoo.jpeg',
-        bgImage: 'https://external-preview.redd.it/blackpinks-jisoo-will-reportedly-join-her-brothers-company-v0-x4PHMfEUKELYylJIeLxREVdMxCI0GadHcS2Uxm6dycw.jpg?auto=webp&s=a1cd966b5962842eb9228637e48db9d1cd8edc34',
-        alt: 'Casa de Ravenclaw'
+        logo: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/home/Ravenclaw-Essence.webp',
+        bgImage: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/home/Ravenclaw-Vibes-Inteligencia.webp',
+        alt: 'Casa de Ravenclaw',
+        bgHouseSections: 'https://global-media-repository.s3.us-east-2.amazonaws.com/clones/Harry-Potter/Sala-Comun-Ravenclaw-El-Santuario-del-Conocimiento.webp'
     }
 ]
 
