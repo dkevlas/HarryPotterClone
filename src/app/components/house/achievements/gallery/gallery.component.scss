@@ -16,7 +16,7 @@
         margin: 1.5em auto;
         display: flex;
         flex-direction: column;
-        background-color: var(--dark-color);
+        background-color: var(--neutral-color);
         box-shadow: 0 0 10px var(--neutral-color);
         .item{
             position: relative;
@@ -48,6 +48,7 @@
             overflow-y: auto;
             .img-item{
                 position: absolute;
+                width: 100%;
                 top: 0;
                 left: 0;
                 columns: 1;

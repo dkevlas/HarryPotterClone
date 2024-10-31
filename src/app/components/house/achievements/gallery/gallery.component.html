@@ -10,7 +10,7 @@
             <div class="images">
                 <div class="img-item">
                     @for (img of allPhotos.photos; track $index) {
-                        <img [src]="img" alt="">
+                        <img appNotImage [src]="img" alt="">
                     }
                 </div>
             </div>
