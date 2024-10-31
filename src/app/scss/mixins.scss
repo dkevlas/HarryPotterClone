@@ -8,6 +8,9 @@
 
 @mixin fontSizeH3(){
     font-size: clamp(1.4rem, 0.944rem + 2.431vw, 2.5rem);
+    font-family: 'Playwrite GB S', sans-serif;
+    text-wrap: pretty;
+    color: var(--secondary-color);
     @include mediaQuerie(large){
         font-size: clamp(2.4rem, -0.308rem + 4.231vw, 3.5rem);
     }
@@ -19,6 +22,7 @@
     max-width: 400px;
     text-wrap: pretty;
     margin: 10px auto;
+    font-family: monospace, sans-serif;
     @include mediaQuerie(medium){
         width: 80%;
     }
