@@ -2,19 +2,23 @@ import { gryffAbout } from "./houses/gryffindor/gryffAbout"
 import { gryffAchievements } from "./houses/gryffindor/gryffAchievements"
 import { gryffBecomeStudent } from "./houses/gryffindor/gryffBecomeStudent"
 import { gryffindor } from "./houses/gryffindor/gryffindor"
+import { gryffStorie } from "./houses/gryffindor/gryffStorie"
 import { huffleAbout } from "./houses/hufflepuff/huffleAbout"
 import { huffleAchievements } from "./houses/hufflepuff/huffleAchievements"
 import { huffleBecomeStudent } from "./houses/hufflepuff/huffleBecomeStudent"
 import { hufflepuff } from "./houses/hufflepuff/hufflepuff"
+import { huffleStorie } from "./houses/hufflepuff/huffleStorie"
 import { ravenAbout } from "./houses/ravenclaw/ravenAbout"
 import { ravenAchievements } from "./houses/ravenclaw/ravenAchievements"
 import { ravenBecomeStudent } from "./houses/ravenclaw/ravenBecomeStudent"
 import { ravenclaw } from "./houses/ravenclaw/ravenclaw"
+import { ravenStorie } from "./houses/ravenclaw/ravenStorie"
 import { slytherAbout } from "./houses/slytherin/slytherAbout"
 import { slytherAchievements } from "./houses/slytherin/slytherAchievements"
 import { slytherBecomeStudent } from "./houses/slytherin/slytherBecomeStudent"
 import { slytherin } from "./houses/slytherin/slytherin"
-import { House, houseAbout, houseAchievements, houseBecomeStudent, infoHouseNav } from "./interfaces"
+import { slytherStorie } from "./houses/slytherin/slytherStorie"
+import { House, houseAbout, houseAchievements, houseBecomeStudent, infoHouseNav, Storie } from "./interfaces"
 
 export const allHouse: House[] = [
     {
@@ -63,6 +67,12 @@ export const houseInfoAbout: houseAbout[] = [
     slytherAbout,
     huffleAbout,
     ravenAbout
+]
+export const houseStorie: Storie[] = [
+    gryffStorie,
+    slytherStorie,
+    huffleStorie,
+    ravenStorie
 ]
 
 export const houseInfoAchievements: houseAchievements[] = [

@@ -22,6 +22,16 @@ export interface houseAbout {
     bgHouse?: string,
 }
 
+export interface Curiosity {
+    curiosity: string,
+    description: string,
+}
+export interface Storie {
+    title: string,
+    storie: string[],
+    curiosities: Curiosity[]
+}
+
 //SECTION ACHIEVEMENTS
 export interface Character {
     name: string,
