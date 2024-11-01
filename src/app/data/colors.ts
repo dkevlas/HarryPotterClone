@@ -11,7 +11,7 @@ const slytherin: Color = {
     secondary: '#C0C0C0'
 }
 const hufflepuff: Color = {
-    primary: '#F6EB61',
+    primary: '#D4C34C',
     secondary: '#000000'
 }
 const ravenclaw: Color = {
