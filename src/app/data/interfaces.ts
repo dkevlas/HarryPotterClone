@@ -25,7 +25,6 @@ export interface houseAbout {
 //SECTION ACHIEVEMENTS
 export interface Character {
     name: string,
-    perfil: string,
     description: string,
     photos: string[],
     descriptionFull: string

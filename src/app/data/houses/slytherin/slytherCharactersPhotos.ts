@@ -3,7 +3,6 @@ import { Character } from "../../interfaces";
 export const slytherCharacter: Character[] = [
     {
         name: 'Draco Malfoy',
-        perfil: '',
         description: 'Un estudiante de Slytherin, conocido por su actitud arrogante y su rivalidad con Harry Potter.',
         photos: [
             'https://cde.3.elcomercio.pe/ima/0/1/0/2/8/1028091.jpg',
@@ -17,7 +16,6 @@ export const slytherCharacter: Character[] = [
     },
     {
         name: 'Severus Snape',
-        perfil: '',
         description: 'El profesor de Pociones y antiguo mortífago, conocido por su lealtad ambigua y su trágica historia.',
         photos: [
             'https://e.rpp-noticias.io/large/2016/01/20/033703_65736.jpg',
@@ -28,11 +26,10 @@ export const slytherCharacter: Character[] = [
             'https://assets.mugglenet.com/wp-content/uploads/2018/04/Teenage-Severus-Snape.jpg',
             'https://static1.srcdn.com/wordpress/wp-content/uploads/snape-deathly-hallows.png',
         ],
-        descriptionFull: 'everus Snape es uno de los personajes más complejos de la serie. Criado en un hogar difícil, su vida está marcada por la pérdida y el amor no correspondido hacia Lily Potter. A lo largo de su tiempo en Hogwarts, se convierte en un mortífago, pero su relación con Dumbledore y su protección de Harry revelan su lealtad y sacrificio. Como profesor de Pociones, su método de enseñanza es estricto, lo que a menudo provoca la animosidad de sus estudiantes. La revelación de su verdadero papel en la historia, así como su profundo amor por Lily, agrega capas de profundidad a su personaje, convirtiéndolo en un héroe trágico que opera en la sombra.'
+        descriptionFull: 'Severus Snape es uno de los personajes más complejos de la serie. Criado en un hogar difícil, su vida está marcada por la pérdida y el amor no correspondido hacia Lily Potter. A lo largo de su tiempo en Hogwarts, se convierte en un mortífago, pero su relación con Dumbledore y su protección de Harry revelan su lealtad y sacrificio. Como profesor de Pociones, su método de enseñanza es estricto, lo que a menudo provoca la animosidad de sus estudiantes. La revelación de su verdadero papel en la historia, así como su profundo amor por Lily, agrega capas de profundidad a su personaje, convirtiéndolo en un héroe trágico que opera en la sombra.'
     },
     {
         name: 'Bellatrix Lestrange',
-        perfil: '',
         description: 'Una leal seguidora de Voldemort, conocida por su crueldad y fanatismo.',
         photos: [
             
@@ -47,7 +44,6 @@ export const slytherCharacter: Character[] = [
     },
     {
         name: 'Tom Riddle (Voldemort)',
-        perfil: '',
         description: 'El principal antagonista de la serie, conocido como Voldemort, quien busca poder absoluto y la inmortalidad.',
         photos: [
             'https://images.ctfassets.net/usf1vwtuqyxm/yMwYMbczYDjbnbk1MpoHI/de2fec43140e0bb77fa40be23b1303ef/lord-voldemort-tom-riddle_1_1800x1248.png',
@@ -60,7 +56,6 @@ export const slytherCharacter: Character[] = [
     },
     {
         name: 'Horace Slughorn',
-        perfil: '',
         description: 'Es un destacado profesor de pociones y jefe de Slytherin, conocido por su "Club de los Élite".',
         photos: [
             'https://cdn.staticneo.com/w/harrypotter/thumb/Slughorn.jpg/300px-Slughorn.jpg',
@@ -72,7 +67,6 @@ export const slytherCharacter: Character[] = [
     },
     {
         name: 'Narcissa Malfoy',
-        perfil: '',
         description: 'Es la madre de Draco Malfoy y una mujer de gran determinación, conocida por su lealtad a su familia.',
         photos: [
             'https://www.the-leaky-cauldron.org/wp-content/uploads/assets/narcissa-malfoy-hair-dye-harry-potter-tiktok-trend.jpg',
@@ -85,7 +79,6 @@ export const slytherCharacter: Character[] = [
     },
     {
         name: 'Pansy Parkinson',
-        perfil: '',
         description: 'Es una estudiante de Slytherin que a menudo se asocia con Draco Malfoy y es conocida por su actitud despreciativa hacia los que considera inferiores.',
         photos: [
             'https://external-preview.redd.it/y8pjhalhX_Nriti48GrwimcScrxU_8hSKMlI3c5yqME.jpg?width=640&crop=smart&auto=webp&s=c5afcf5603cdf03649da06bd08352765f5a47373',
@@ -99,7 +92,6 @@ export const slytherCharacter: Character[] = [
     },
     {
         name: 'Fenrir Greyback',
-        perfil: '',
         description: 'Aunque no era estudiante de Hogwarts, Fenrir es un lobos hombre temido, asociado con Slytherin por su relación con varios mortífagos.',
         photos: [
             'https://static1.purepeople.com/articles/1/14/45/01/@/1535046-dave-legeno-qui-joue-fenrir-greyback-580x0-1.jpg',
@@ -111,7 +103,6 @@ export const slytherCharacter: Character[] = [
     },
     {
         name: 'Dolores Umbridge',
-        perfil: '',
         description: 'Es una profesora y funcionaria del Ministerio de Magia, conocida por su crueldad y su deseo de controlar a los estudiantes en Hogwarts.',
         photos: [
             'https://upload.wikimedia.org/wikipedia/en/b/b9/Umbridge.jpeg',
@@ -123,7 +114,6 @@ export const slytherCharacter: Character[] = [
     },
     {
         name: 'Vincent Crabbe',
-        perfil: '',
         description: 'Es uno de los amigos más cercanos de Draco Malfoy, conocido por su fuerza física y su lealtad inquebrantable.',
         photos: [
             'https://www.el19digital.com/files/articulos/109532.jpg',

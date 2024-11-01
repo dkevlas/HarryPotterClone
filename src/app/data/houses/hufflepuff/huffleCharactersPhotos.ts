@@ -3,7 +3,6 @@ import { Character } from "../../interfaces";
 export const huffleCharacters: Character[] = [
     {
         name: 'Cedric Diggory',
-        perfil: '',
         description: 'Un valiente y talentoso estudiante, conocido por su nobleza y habilidades en el Quidditch.',
         photos: [
             'https://st1.uvnimg.com/dims4/default/190d797/2147483647/thumbnail/480x270/quality/75/?url=http%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2F72%2F3f%2F7a7ebcef41c7bda2d7840b5673a7%2Fcedric-diggory-harry-potter-6.jpg',
@@ -16,7 +15,6 @@ export const huffleCharacters: Character[] = [
     },
     {
         name: 'Nymphadora Tonks',
-        perfil: '',
         description: 'Una metamorfomaga valiente y miembro de la Orden del Fénix, conocida por su naturaleza optimista y su estilo único.',
         photos: [
             'https://i.redd.it/jgfdcdygd9511.jpg',
@@ -29,7 +27,6 @@ export const huffleCharacters: Character[] = [
     },
     {
         name: 'Pomona Sprout',
-        perfil: '',
         description: 'La profesora de Herbología y jefa de la casa Hufflepuff, conocida por su amor por las plantas y su sabiduría.',
         photos: [
             'https://images.ctfassets.net/usf1vwtuqyxm/2ZSalld3434qLB9r25o3my/accd0ab25075137b315a420d0eb20f27/pomona-sprout_1_1800x1248.png?h=416&w=600&fit=pad',
@@ -41,7 +38,6 @@ export const huffleCharacters: Character[] = [
     },
     {
         name: 'Ernie Macmillan',
-        perfil: '',
         description: 'Un estudiante leal y valiente, conocido por su sentido de justicia y su amistad con Harry.',
         photos: [
             'https://i.pinimg.com/236x/08/bd/0b/08bd0b51f6afa778c85d65a1b17bdafd.jpg',
@@ -52,7 +48,6 @@ export const huffleCharacters: Character[] = [
     },
     {
         name: 'Susan Bones',
-        perfil: '',
         description: `es una estudiante valiente de Hufflepuff, conocida por su participación en Dumbledore's Army y su lealtad a sus amigos`,
         photos: [
             'https://d2bzx2vuetkzse.cloudfront.net/fit-in/0x450/unshoppable_producs/224f3486-6def-4b87-b990-73c1332e3d3e.jpeg',
@@ -63,7 +58,6 @@ export const huffleCharacters: Character[] = [
     },
     {
         name: 'Justin Finch-Fletchley',
-        perfil: '',
         description: 'Un estudiante de Hufflepuff conocido por su amabilidad y amistad con Harry y sus compañeros.',
         photos: [
             'https://i.pinimg.com/originals/26/15/45/261545da64aa2cbc6325f6432f595f51.jpg',
@@ -74,7 +68,6 @@ export const huffleCharacters: Character[] = [
     },
     {
         name: 'Newt Scamander',
-        perfil: '',
         description: 'El autor de "Animales Fantásticos y Dónde Encontrarlos", conocido por su amor por las criaturas mágicas.',
         photos: [
             'https://upload.wikimedia.org/wikipedia/en/c/c5/Newt_Scamander_in_New_York.jpg',

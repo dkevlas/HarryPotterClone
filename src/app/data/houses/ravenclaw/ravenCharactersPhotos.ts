@@ -3,7 +3,6 @@ import { Character } from "../../interfaces";
 export const ravenCharacters: Character[] = [
     {
         name: 'Luna Lovegood',
-        perfil: '',
         description: 'Una estudiante peculiar y soñadora, conocida por su pensamiento independiente y su apertura a lo inusual.',
         photos: [
             'https://upload.wikimedia.org/wikipedia/en/c/c2/LunaLovegood.jpeg',
@@ -16,7 +15,6 @@ export const ravenCharacters: Character[] = [
     },
     {
         name: 'Cho Chang',
-        perfil: '',
         description: 'Una talentosa jugadora de Quidditch y el primer interés amoroso de Harry.',
         photos: [
             'https://i.pinimg.com/736x/43/c5/1b/43c51b1a9c443e3c7386e8c501dc1896.jpg',
@@ -29,7 +27,6 @@ export const ravenCharacters: Character[] = [
     },
     {
         name: 'Filius Flitwick',
-        perfil: '',
         description: 'El encantador y experto profesor de Encantamientos en Hogwarts, conocido por su sabiduría y dedicación.',
         photos: [
             'https://idealex.press/wp-content/uploads/2020/07/Filius-Flitwick.jpg',
@@ -40,7 +37,6 @@ export const ravenCharacters: Character[] = [
     },
     {
         name: 'Gilderoy Lockhart',
-        perfil: '',
         description: 'El carismático pero inepto profesor de Defensa Contra las Artes Oscuras, conocido por su ego y su búsqueda de fama.',
         photos: [
             'https://images.ctfassets.net/usf1vwtuqyxm/5My1Zv1UDeV9pwQQOkyCoh/6b0b4142d50324a4bccc0e747e7ef0a9/hp-f2-lockhart-in-class-handing-out-tests-web-landscape.jpg?fm=jpg&q=70&w=2560',
@@ -52,7 +48,6 @@ export const ravenCharacters: Character[] = [
     },
     {
         name: 'Moaning Myrtle (Myrtle la Llorona)',
-        perfil: '',
         description: ' Un fantasma de Hogwarts, conocido por su llanto y su conexión con la Cámara de los Secretos.',
         photos: [
             'https://i.pinimg.com/236x/d5/43/52/d54352e56272217999ff3489190c1397.jpg',
@@ -63,7 +58,6 @@ export const ravenCharacters: Character[] = [
     },
     {
         name: 'Padma Patil',
-        perfil: '',
         description: 'Una estudiante de Ravenclaw, hermana gemela de Parvati Patil, conocida por su inteligencia y habilidad mágica.',
         photos: [
             'https://cdn.staticneo.com/w/harrypotter/thumb/PadmaPatil.jpg/175px-PadmaPatil.jpg',
@@ -74,7 +68,6 @@ export const ravenCharacters: Character[] = [
     },
     {
         name: 'Helena Ravenclaw (La Dama Gris)',
-        perfil: '',
         description: 'La fantasmal hija de Rowena Ravenclaw, conocida por su historia trágica y su conexión con los Horrocruxes.',
         photos: [
             'https://static0.srcdn.com/wordpress/wp-content/uploads/2017/01/helena-ravenclaw-ghost-hogwarts.jpg?q=50&fit=crop&w=738&dpr=1.5%201107w',
@@ -84,7 +77,6 @@ export const ravenCharacters: Character[] = [
     },
     {
         name: 'Quirinus Quirrell',
-        perfil: '',
         description: 'El profesor de Defensa Contra las Artes Oscuras en Hogwarts, conocido por su timidez y su conexión con Voldemort.',
         photos: [
             'https://imgix.ranker.com/user_node_img/50126/1002503407/original/1002503407-photo-u1?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=355',

@@ -3,7 +3,6 @@ import { Character } from "../../interfaces";
 export const gryffCharacters: Character[] = [
     {
         name: 'Harry Potter',
-        perfil: '',
         description: 'El protagonista de la serie, conocido por su cicatriz en forma de rayo y su papel en la lucha contra Voldemort.',
         photos: [
             'https://cdn1-production-images-kly.akamaized.net/FYe5_pWeAU8O3U_XzeT6jYoSISc=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4813903/original/032788500_1714121080-IMG_2228.jpg',
@@ -17,7 +16,6 @@ export const gryffCharacters: Character[] = [
     },
     {
         name: 'Hermione Granger',
-        perfil: '',
         description: 'La amiga inteligente y aplicada de Harry, conocida por su talento académico.',
         photos: [
             'https://criticalhits.com.br/wp-content/uploads/2020/12/hermione-granger-01-1-910x512.jpg',
@@ -31,7 +29,6 @@ export const gryffCharacters: Character[] = [
     },
     {
         name: 'Ron Weasley',
-        perfil: '',
         description: 'El leal amigo de Harry, conocido por su sentido del humor y su gran corazón.',
         photos: [
             'https://www.cinepremiere.com.mx/wp-content/uploads/2023/02/Rupert-Grint-Harry-Potter.jpg',
@@ -44,7 +41,6 @@ export const gryffCharacters: Character[] = [
     },
     {
         name: 'Albus Dumbledore',
-        perfil: '',
         description: 'El sabio y poderoso director de Hogwarts, conocido por su liderazgo en la lucha contra el mal.',
         photos: [
             'https://www.mundodeportivo.com/alfabeta/hero/2024/10/eb5adad3-2dcd-4ddc-806b-7557025dbe1c_alta-aspect-ratio_default_0.jpg?width=768&aspect_ratio=16:9&format=nowebp',
@@ -55,8 +51,19 @@ export const gryffCharacters: Character[] = [
         descriptionFull: 'Albus Dumbledore es uno de los magos más destacados de la historia, conocido por su inmensa sabiduría y su habilidad mágica. Su vida está marcada por decisiones complejas, incluidas sus interacciones con Gellert Grindelwald, su antiguo amigo. Dumbledore es el fundador de la Orden del Fénix y actúa como mentor de Harry a lo largo de su juventud. Sin embargo, su enfoque a veces enigmático y su tendencia a ocultar verdades importantes a Harry generan tensiones. A medida que avanza la historia, se revela que Dumbledore también tiene sus propias sombras y arrepentimientos, lo que añade profundidad a su personaje. Su sacrificio y su lucha contra Voldemort son fundamentales para la trama, representando el conflicto entre el bien y el mal.'
     },
     {
+        name: 'Ginny Weasley',
+        description: 'Ginny Weasley es la única hija de la familia Weasley. Es valiente, inteligente y destaca como jugadora de Quidditch.',
+        photos: [
+            'https://i.pinimg.com/736x/90/09/d4/9009d4101fb23a3bed774ee18dcaf022.jpg',
+            'https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2016/11/18/ginny.jpg',
+            'https://i.pinimg.com/736x/fc/73/6c/fc736c7f94ee7f7c894118e6a52d2eb8.jpg',
+            'https://media.vandalsports.com/i/640x360/8-2023/202382913241_1.jpg.webp',
+            'https://i.servimg.com/u/f73/12/03/65/71/tm/sin_ta10.jpg'
+        ],
+        descriptionFull: 'Ginny Weasley es la hija más joven de la familia Weasley, conocida por su valentía y determinación. Aunque al principio es tímida y tiene una gran admiración por Harry Potter, su carácter se fortalece a lo largo de la serie. Destaca en Quidditch como cazadora del equipo de Gryffindor y se convierte en una figura clave en la lucha contra Voldemort. Además de ser una bruja talentosa, Ginny es una escritora destacada y trabaja como periodista en el mundo mágico. Su relación con Harry evoluciona a lo largo de la historia, y al final, se casan y tienen tres hijos, mostrando su crecimiento y fortaleza como personaje y como mujer en el mundo mágico.'
+    },
+    {
         name: 'Minerva McGonagall',
-        perfil: '',
         description: 'La estricta pero justa profesora de Transformaciones y subdirectora de Hogwarts.',
         photos: [
             'https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/McGonagall_%28screenshot%29.jpg/220px-McGonagall_%28screenshot%29.jpg',
@@ -69,7 +76,6 @@ export const gryffCharacters: Character[] = [
     },
     {
         name: 'Sirius Black',
-        perfil: '',
         description: 'El padrino de Harry, conocido por su pasado en Azkaban y su espíritu rebelde.',
         photos: [
             'https://images.ctfassets.net/usf1vwtuqyxm/1rDt6sbCaazd6HdREpDR89/1c0fef1570094aadd4fb87230218db07/sirius-black_2_1800x1248.png?h=416&w=600&fit=pad',
@@ -81,7 +87,6 @@ export const gryffCharacters: Character[] = [
     },
     {
         name: 'James Potter',
-        perfil: '',
         description: 'El padre de Harry, conocido por ser un valiente y talentoso mago.',
         photos: [
             'https://preview.redd.it/uhnviifd5owc1.jpeg?auto=webp&s=eebf35328f471e67faa2d79267c728d5a3826700',
@@ -92,7 +97,6 @@ export const gryffCharacters: Character[] = [
     },
     {
         name: 'Lily Potter',
-        perfil: '',
         description: 'La madre de Harry, conocida por su sacrificio y amor incondicional.',
         photos: [
             'https://i.pinimg.com/736x/bd/41/08/bd41080030dcf421a57fe1b7a112fb12.jpg',
