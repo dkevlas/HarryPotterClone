@@ -10,7 +10,7 @@ import { BecomeStudentComponent } from './become-student/become-student.componen
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './achievements/gallery/gallery.component';
 import { RequirementsComponent } from './become-student/requirements/requirements.component';
-
+import { StorieComponent } from './about/storie/storie.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { RequirementsComponent } from './become-student/requirements/requirement
     BecomeStudentComponent,
     AboutComponent,
     GalleryComponent,
-    RequirementsComponent
+    RequirementsComponent,
+    StorieComponent
   ],
   imports: [
     CommonModule,

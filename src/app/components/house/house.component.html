@@ -1,4 +1,7 @@
 @if(houseOK()){
+    <div class="bgHouse" [ngStyle]="{'background-image': bgImage}">
+        <div class="layer"></div>
+    </div>
     <app-navbar></app-navbar>
     <router-outlet></router-outlet>
     <button (click)="goHome()">

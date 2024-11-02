@@ -4,17 +4,13 @@ import { HouseComponent } from './house.component';
 import { AboutComponent } from './about/about.component';
 import { BecomeStudentComponent } from './become-student/become-student.component';
 import { AchievementsComponent } from './achievements/achievements.component';
+import { NotFoundComponent } from '../../error/not-found/not-found.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HouseComponent,
     children: [
-      {
-        path: '',
-        redirectTo: 'nosotros',
-        pathMatch: 'full'
-      },
       {
         path: 'nosotros',
         component: AboutComponent
@@ -26,7 +22,7 @@ const routes: Routes = [
       {
         path: 'ser-estudiante',
         component: BecomeStudentComponent
-      }
+      },
     ]
   }
 ];
