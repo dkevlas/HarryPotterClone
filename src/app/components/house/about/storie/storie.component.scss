@@ -1,0 +1,74 @@
+@import '../../../../../styles.scss';
+
+.container{
+    @include modal;
+    .content{
+        @include content;
+        .title{
+            font-size: clamp(1.063rem, 0.676rem + 2.059vw, 1.5rem);
+            color: var(--primary-color);
+            font-family: 'Playwrite GB S', sans-serif;
+        }
+        .storie{
+            width: 100%;
+            overflow-y: auto;
+            box-shadow: inset 0 0 10px var(--primary-color), inset 0 0 15px (var(--primary-color));
+            .storie-item{
+                width: 90%;
+                max-width: 600px;
+                display: flex;
+                flex-direction: column;
+                gap: clamp(0.313rem, -0.184rem + 2.647vw, 0.875rem);
+                padding: 1em .5em;
+                margin: auto;
+                overflow: auto;
+                p{
+                    font-size: clamp(0.938rem, 0.827rem + 0.588vw, 1.063rem);
+                    text-wrap: pretty;
+                    text-align: start;
+                    color: var(--dark-color);
+                    font-family: monospace, sans-serif;
+                }
+            }
+        }
+        .curiosities{
+            min-height: max-content;
+            display: flex;
+            flex-direction: column;
+            gap: clamp(0.313rem, -0.184rem + 2.647vw, 0.875rem);
+            padding: .5em;
+            .item{
+                max-width: 350px;
+                height: min-content;
+                margin: auto;
+                h4{
+                    font-size: clamp(0.875rem, 0.71rem + 0.882vw, 1.063rem);
+                    color: var(--primary-color);
+                    font-family: 'Playwrite GB S', sans-serif;
+                }
+                p{
+                    font-size: clamp(0.75rem, 0.585rem + 0.882vw, 0.938rem);
+                    max-width: 500px;
+                    text-wrap: pretty;
+                    color: var(--dark-color);
+                    font-family: monospace, sans-serif;
+                }
+            }
+        }
+    }
+    button{
+        @include closeModal;
+    }
+}
+
+@include mediaQuerie(medium){
+    .container{
+        .content{
+            .curiosities{
+                .item{
+                    max-width: 60%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<div class="storie">
+    <div class="container">
+        <div class="content">
+            <h3 class="title">{{allStories[index].title}}</h3>
+            <div class="storie">
+                <div class="storie-item">
+                    @for (text of allStories[index].storie; track $index) {
+                        <p>{{text}}</p>
+                    }
+                </div>
+            </div>
+            <div class="curiosities">
+                @for (curiosity of allStories[index].curiosities; track $index) {
+                    <div class="item">
+                        <h4>{{curiosity.curiosity}}</h4>
+                        <p>{{curiosity.description}}</p>
+                    </div>
+                }
+            </div>
+        </div>
+        <button (click)="sendClose()">CERRAR</button>
+    </div>
+</div>
