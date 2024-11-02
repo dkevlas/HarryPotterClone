@@ -3,6 +3,7 @@ import { House } from '../../data/interfaces';
 import { allHouse } from '../../data/houses';
 import { Router } from '@angular/router';
 import { IndexHouseService } from '../../services/index-house.service';
+import { Color, colorsHouse } from '../../data/colors';
 
 @Component({
   selector: 'app-home',
@@ -43,6 +44,7 @@ export class HomeComponent{
   selectHouse(i: number): void{
     this.backgroundCurrent = `url('${this.houses[i].bgImage}')`
     this.stylesHouseSelected = i
+    this.changeLayer(i)
   }
   //RUTA VARIABLE
   routeHouse(title: string){
@@ -51,5 +53,12 @@ export class HomeComponent{
   //NUMERO BRIDGE
   catchNumber(index: number){
     this.numberBridge.setNumber(index)
+  }
+
+  colors: Color[] = colorsHouse
+  bgLayerColor = ''
+  changeLayer(index: number): void{
+    this.bgLayerColor = this.colors[index].primary
+    document.documentElement.style.setProperty('--primary-color', this.colors[index].primary)
   }
 }

@@ -1,5 +1,14 @@
 @import '../../../styles.scss';
 
+.layer-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: .2;
+    background-color: var(--primary-color);
+}
 .container{
     min-width: 300px;
     display: flex;
@@ -10,6 +19,7 @@
     min-height: 620px;
     justify-content: center;
     align-items: center;
+    z-index: $z-back;
     .houses{
         width: 90%;
         max-width: 650px;
@@ -44,21 +54,17 @@
                 aspect-ratio: 1/1;
                 object-fit: cover;
                 border-radius: 50%;
-                filter: brightness(.8);
-                opacity: .9;
                 outline: 2px solid var(--neutral-color);
                 transition: transform .25s ease-in-out, filter .25s, outline .25s;
                 &:hover{
                     transform: scale(1.05);
                     box-shadow: 0 0 10px var(--neutral-color);
-                    outline: 2px solid var(--dark-color);
                     filter: brightness(1);
                 }
                 &.selected-house{
-                    outline: 5px solid var(--dark-color);
-                    box-shadow: 0 0 10px var(--neutral-color), 0 0 20px var(--neutral-color);
-                    filter: brightness(1);
-                    opacity: 1;
+                    outline: 5px solid var(--primary-color);
+                    box-shadow: 0 0 10px var(--secondary-color), 0 0 20px var(--neutral-color);
+                    filter: brightness(.9);
                     transform: scale(1);
                     cursor: default;
                 }
@@ -66,14 +72,14 @@
         }
         .button{
             position: absolute;
-            padding: 5px;
+            font-family: 'Playwrite GB S', sans-serif;
             font-size: clamp(0.781rem, 0.734rem + 0.188vw, 0.875rem);
             left: 50%;
             transform: translateX(-50%);
             min-width: 70px;
             background-color: transparent;
             color: var(--neutral-color);
-            outline: 2px solid var(--dark-color);
+            outline: 2px solid var(--primary-color);
             border-radius: 0 7px 0 7px;
             backdrop-filter: blur(10px);
             width: 100%;
