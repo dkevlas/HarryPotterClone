@@ -1,23 +1,9 @@
 @import '../../../../../styles.scss';
 
 .container{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-width: 300px;
-    height: 100%;
-    background-color: #0009;
-    z-index: $z-popup;
+    @include modal;
     .content{
-        width: 90%;
-        height: calc(100% - 300px);
-        min-height: 450px;
-        margin: 1.5em auto;
-        display: flex;
-        flex-direction: column;
-        background-color: var(--neutral-color);
-        box-shadow: 0 0 10px var(--neutral-color);
+        @include content;
         .item{
             position: relative;
             min-height: 230px;
@@ -28,16 +14,17 @@
                 height: 100%;
                 text-align: center;
                 h3{
-                    font-size: clamp(1.125rem, 0.625rem + 1.25vw, 1.563rem);
+                    font-size: clamp(1.125rem, 0.977rem + 0.698vw, 1.5rem);
                     color: var(--primary-color);
-                    font-size: 24px;
                     width: max-content;
                     margin: auto;
+                    font-family: 'Playwrite GB S', sans-serif;
                 }
                 p{
                     color: var(--primary-color);
                     text-wrap: pretty;
-                    font-size: clamp(0.938rem, 0.723rem + 0.536vw, 1.125rem);
+                    font-family: monospace, sans-serif;
+                    font-size: clamp(0.72rem, 0.403rem + 1.493vw, 1rem);
                 }
             }
         }
@@ -63,24 +50,13 @@
         }
     }
     button{
-        padding: .5em 1em;
-        background-color: var(--primary-color);
-        color: var(--neutral-color);
-        outline: 2px solid var(--neutral-color);
-        &:hover{
-            outline: none;
-            background-color: var(--primary-color);
-        }
-        &:active{
-            transform: scale(.95);
-        }
+        @include closeModal;
     }
 }
 
 @include mediaQuerie(medium){
     .container{
         .content{
-            max-width: 1000px;
             .item{
                 min-height: 250px;
                 max-height: 280px;
@@ -93,13 +69,6 @@
                     columns: 2;
                 }
             }
-        }
-    }
-}
-@include mediaQuerie(large){
-    .container{
-        .content{
-            height: calc(100% - 150px);
         }
     }
 }

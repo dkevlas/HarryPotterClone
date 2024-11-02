@@ -1,10 +1,5 @@
 @import '../../../../styles.scss';
 
-.achievements{
-    .bgHouse{
-        @include bgHouse;
-    }
-}
 .container{
     @include componentTrio;
     text-align: center;
@@ -14,7 +9,7 @@
         h3{
             @include fontSizeH3;
             text-wrap: pretty;
-            color: var(--primary-color);
+            color: var(--secondary-color);
         }
         p{
             @include descriptionH3-forP;
@@ -35,7 +30,7 @@
             .items{
                 aspect-ratio: 1/1;
                 max-height: 200px;
-                outline: 1px solid var(--primary-color);
+                outline: 1px solid var(--secondary-color);
                 outline-offset: -5px;
                 backdrop-filter: blur(5px);
                 box-shadow: 5px 5px 10px var(--primary-color);
@@ -48,12 +43,14 @@
                     h4{
                         font-size: clamp(1rem, 0.8rem + 0.533vw, 1.2rem);
                         color: var(--secondary-color);
+                        font-family: 'Playwrite GB S', sans-serif;
                     }
                     p{
                         font-size: clamp(0.8rem, 0.624rem + 0.941vw, 1rem);
                         padding: 0 10px;
                         text-wrap: pretty;
                         color: var(--secondary-color);
+                        font-family: monospace, sans-serif;
                     }
                 }
             }
@@ -65,7 +62,7 @@
                 width: max-content;
                 text-wrap: nowrap;
                 padding: .5em 1em;
-                color: var(--primary-color);
+                color: var(--secondary-color);
                 font-weight: bold;
                 background-color: transparent;
                 backdrop-filter: blur(5px);
@@ -84,8 +81,7 @@
         }
     }
     .show-more{
-        background-color: transparent;
-        border: 2px solid var(--primary-color);
+        background-color: var(--primary-color);
         border-radius: 0 10px 0 10px;
         color: var(--secondary-color);
         backdrop-filter: blur(10px);
@@ -93,9 +89,10 @@
         padding: .8em 1.5em;
         text-align: center;
         margin: 1em;
-        opacity: .5;
+        opacity: .8;
         &:hover{
             opacity: 1;
+            outline: 2px solid var(--secondary-color);
         }
     }
 }
