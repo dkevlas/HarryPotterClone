@@ -19,11 +19,20 @@ export class AboutComponent implements OnInit {
     changeColor(this.indexService)
   }
 
-  indexCatched(){
+  indexCatched(): void{
     this.numberBridge.number$.subscribe(value => {
       this.indexService = value
     })
   }
 
   bgHouse: string = `url('${this.infoAbout[this.indexService].bgHouse}')`
+
+  isOpen: boolean = false
+  openModal(){
+    this.isOpen = true;
+    document.body.style.overflow = 'hidden';
+  }
+  closeModal(value: boolean){
+    this.isOpen = value;
+  }
 }

@@ -1,16 +1,16 @@
 <div class="about">
-    <div class="bgHouse">
-        <img [src]="infoAbout[indexService].bgHouse" alt="">
-    </div>
     <div class="container">
         <div class="content">
             <h3>{{infoAbout[indexService].titleDescription}}</h3>
             <p>{{infoAbout[indexService].description}}</p>
-            <button>Aprender más</button>
+            <button (click)="openModal()" >Aprender más</button>
         </div>
         <div class="imgAnimal">
             <h2>{{infoAbout[indexService].nameHouse}}</h2>
-            <img [src]="infoAbout[indexService].imgAnimal" alt="">
+            <img [src]="infoAbout[indexService].imgAnimal">
         </div>
     </div>
 </div>
+@if(isOpen){
+    <app-storie (close)="closeModal($event)" [index]="indexService"></app-storie>
+}

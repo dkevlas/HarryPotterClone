@@ -1,10 +1,5 @@
 @import '../../../../styles.scss';
 
-.about{
-    .bgHouse{
-        @include bgHouse;
-    }
-}
 .container{
     @include componentTrio;
     .content{
@@ -12,8 +7,6 @@
         text-align: center;
         h3{
             @include fontSizeH3;
-            text-wrap: pretty;
-            color: var(--primary-color);
         }
         p{
             color: var(--neutral-color);
@@ -25,7 +18,8 @@
             background-color: transparent;
             color: var(--secondary-color);
             backdrop-filter: blur(10px);
-            box-shadow: 0 0 5px var(--primary-color);
+            font-family: monospace, sans-serif;
+            box-shadow: 0 0 5px var(--secondary-color);
             &:hover{
                 outline: 1px solid var(--primary-color);
             }
@@ -42,9 +36,9 @@
             color: var(--secondary-color);
             text-align: center;
             font-size: clamp(1.7rem, 1.244rem + 2.431vw, 2.8rem);
+            font-family: 'Playwrite GB S', sans-serif;
         }
         img{
-            
             height: 90%;
             object-fit: cover;
             object-position: center;
@@ -53,6 +47,7 @@
             left: 50%;
             transform: translateX(-50%);
             z-index: $z-back;
+            filter: drop-shadow(0 0 2px var(--secondary-color)) brightness(.6);
         }
     }
 }
