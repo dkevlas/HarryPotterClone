@@ -1,82 +1,94 @@
 @import '../../../../../styles.scss';
 .requirements{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    z-index: $z-modal;
-    background-color: #0008;
-    text-align: center;
     .container{
-        width: 95%;
-        margin: 2em auto 0;
-        background-color: var(--dark-color);
-        box-shadow: 0 0 10px var(--neutral-color);
-        padding: .5em;
+        @include modal;
         .content{
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            h3{
-                color: var(--primary-color);
-                font-size: clamp(1.563rem, 1.066rem + 2.647vw, 2.125rem);
-            }
-            .description{
-                color: var(--neutral-color);
-                font-size: clamp(1rem, 0.669rem + 1.765vw, 1.375rem);
-            }
-            ul{
-                width: 90%;
-                margin: 1em auto;
-                max-width: 400px;
-                li{
-                    list-style: outside;
+            @include content;
+            position: relative;
+            padding: 1em;
+            justify-content: space-between;
+            .test{
+                height: max-content;
+                overflow-y: auto;
+                h3{
                     color: var(--primary-color);
-                    text-align: start;
-                    font-size: clamp(0.875rem, 0.71rem + 0.882vw, 1.063rem);
-                    margin-bottom: .5em;
-                    font-weight: bold;
+                    font-size: clamp(1.188rem, 0.833rem + 1.667vw, 1.5rem);
+                }
+                .description{
+                    color: var(--dark-color);
+                    max-width: 800px;
+                    margin: auto;
+                    text-wrap: pretty;
+                    font-size: clamp(0.938rem, 0.583rem + 1.667vw, 1.25rem);
+                }
+                ul{
+                    width: 85%;
+                    margin: 1em auto;
+                    max-width: 400px;
+                    li{
+                        list-style: outside;
+                        color: var(--primary-color);
+                        text-align: start;
+                        font-size: clamp(0.875rem, 0.71rem + 0.882vw, 1.063rem);
+                        font-size: clamp(0.75rem, 0.626rem + 0.581vw, 1.063rem);
+                        margin-bottom: .5em;
+                        font-weight: bold;
+                    }
                 }
             }
         }
     }
-    .cita{
-        color: var(--neutral-color);
-    }
-    .test{
-        color: var(--primary-color);
-        a{
-            color: var(--secondary-color);
-            text-decoration: underline;
+    .footer{
+        width: 90%;
+        margin: 0 auto;
+        font-size: clamp(0.875rem, 0.776rem + 0.465vw, 1.125rem);
+        .cita{
+            color: var(--dark-color);
+        }
+        .test{
+            margin-top: 1em;
+            color: var(--primary-color);
+            a{
+                color: var(--secondary-color);
+                text-decoration: underline;
+            }
         }
     }
     button{
-        padding: .5em 1em;
-        color: var(--primary-color);
-        background-color: var(--secondary-color);
-        outline: 2px solid var(--primary-color);
-        margin: 2em 0;
-        transition: transform .25;
-        &:hover{
-            transform: scale(1.05);
-        }
-        &:active{
-            transform: scale(.95);
-        }
+        @include closeModal;
     }
 }
 @include mediaQuerie(medium){
     .requirements{
         .container{
-            max-width: 750px;
             .content{
+                .test{
+                    max-height: 400px;
+                }
                 h3{
                     font-size: clamp(2.1rem, 0.7rem + 2.8vw, 2.8rem);
                 }
                 ul{
+                    width: 90%;
                     li{
                         font-size: clamp(1rem, 0.6rem + 0.8vw, 1.2rem);
                     }
+                }
+                .footer{
+                    bottom: 3em;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@include mediaQuerie(large){
+    .requirements{
+        .container{
+            .content{
+                .test{
+                    overflow-y: hidden;
                 }
             }
         }
