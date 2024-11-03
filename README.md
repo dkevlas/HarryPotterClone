@@ -1,27 +1,46 @@
-# HarryPotter
+# Harry Potter Web Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+### Imitación y/o Mejora de un Diseño Web
 
-## Development server
+Este proyecto es una recreación de una web inspirada en una imagen de arry Potter. He desarrollado una versión responsive e interactiva. Utilizando SCSS y TypeScript en Angular, He desarrollado una versión responsive e interactiva, donde no solo he replicado el diseño, sino que también he creado acciones para esos botones, aportando así una nueva dimensión al proyecto. El objetivo fue no solo replicar la estética original, sino también ofrecer una experiencia más inmersiva y funcional.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Comparación de Diseños
 
-## Code scaffolding
+- **[Diseño Original](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-04-Harry-Potter/original.webp)**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Imitaciones por Tipo de Pantalla
 
-## Build
+1. **Mobile-Sreen**  
+   - **[iPhone XR/XS Max](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-04-Harry-Potter/small.jpg)**
+   - Resolución: 414x1941
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. **Tablet-Screen**  
+   - **[iPad Pro (12.9-inch)](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-04-Harry-Potter/medium.jpg)**
+   - Resolución: 1026x1475
 
-## Running unit tests
+4. **Desktop-Screen**  
+   - **[Laptop Standard](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-04-Harry-Potter/large.jpg)**
+   - Resolución: 1440x1622
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Mejoras realizadas:
+- Adaptado para **celulares**, **tablets**, y otras resoluciones.
 
-## Running end-to-end tests
+## Código del Proyecto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clonar el repositorio** usando Git:
+   ```bash
+   git clone https://github.com/dkevlas/HarryPotterClone.git
+   ```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+2. **Navegar** al directorio del proyecto:
+  ```bash
+  cd HarryPotterClone
+  ```
+3. **Instalar las dependencias** Asegúrate de tener Node.js y npm instalados. Luego ejecuta:
+  ```bash
+  npm install
+  ```
+4. **Iniciar** el servidor
+   ```
+   ng serve
+```
