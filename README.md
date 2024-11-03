@@ -31,16 +31,15 @@ Este proyecto es una recreación de una web inspirada en una imagen de arry Pott
    ```bash
    git clone https://github.com/dkevlas/HarryPotterClone.git
    ```
-
 2. **Navegar** al directorio del proyecto:
-  ```bash
-  cd HarryPotterClone
-  ```
+   ```bash
+   cd HarryPotterClone
+   ```
 3. **Instalar las dependencias** Asegúrate de tener Node.js y npm instalados. Luego ejecuta:
-  ```bash
-  npm install
-  ```
-4. **Iniciar** el servidor
+   ```bash
+   npm install
+   ```
+4. **Iniciar** el servidor:
    ```
    ng serve
-```
+   ```
